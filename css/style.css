@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tela-do-jogo {
+    width: 80%;
+    height: 500px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.cerca {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: cerca-animacao 2s infinite linear;
+}
+
+.dino {
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+}
+
+.pulo {
+    animation: dino-pulo 500ms ease-out;
+}
+
+@keyframes cerca-animacao {
+    from {
+        right: -80px;
+    }to{
+        right: 100%;
+    }
+}
+
+@keyframes dino-pulo {
+    0% {
+        bottom: 0;
+    }40%{
+        bottom: 150px;
+    }50%{
+        bottom: 150px;
+    }60%{
+        bottom: 150px;
+    }100%{
+        bottom: 0;
+}
+}
