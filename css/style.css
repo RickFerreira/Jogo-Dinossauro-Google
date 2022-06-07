@@ -5,9 +5,10 @@
 }
 
 .tela-do-jogo {
-    width: 80%;
+    background: linear-gradient(#87ceeb, #e0f6ff);
+    width: 100%;
     height: 500px;
-    border: 1px solid #333;
+    border-bottom: 15px solid green;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -30,6 +31,12 @@
     animation: pulo 500ms ease-out;
 }
 
+.nuvem {
+    width: 350px;
+    position: absolute;
+    animation: nuvem-animacao 10s infinite linear;
+}
+
 @keyframes cerca-animacao {
     from {
         right: -80px;
@@ -42,12 +49,20 @@
     0% {
         bottom: 0;
     }40%{
-        bottom: 100px;
+        bottom: 150px;
     }50%{
-        bottom: 100px;
+        bottom: 150px;
     }60%{
-        bottom: 100px;
+        bottom: 150px;
     }100%{
         bottom: 0;
+    }
 }
+
+@keyframes nuvem-animacao {
+    from {
+        right: -350px;
+    }to{
+        right: 100%;
+    }
 }
