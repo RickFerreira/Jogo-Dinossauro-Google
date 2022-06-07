@@ -17,17 +17,17 @@
     position: absolute;
     bottom: 0;
     width: 80px;
-    animation: cerca-animacao 2s infinite linear;
+    animation: cerca-animacao 1.5s infinite linear;
 }
 
 .dino {
+    width: 150px;
     position: absolute;
     bottom: 0;
-    width: 120px;
 }
 
 .pulo {
-    animation: dino-pulo 500ms ease-out;
+    animation: pulo 500ms ease-out;
 }
 
 @keyframes cerca-animacao {
@@ -38,15 +38,15 @@
     }
 }
 
-@keyframes dino-pulo {
+@keyframes pulo {
     0% {
         bottom: 0;
     }40%{
-        bottom: 150px;
+        bottom: 100px;
     }50%{
-        bottom: 150px;
+        bottom: 100px;
     }60%{
-        bottom: 150px;
+        bottom: 100px;
     }100%{
         bottom: 0;
 }
