@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+  
 
 .topo{
     background-image: linear-gradient(to top, #004aac 0%, #1d1d1d 100%);
@@ -72,7 +73,7 @@
     0% {
         bottom: 0;
     }40%{
-        
+
         bottom: 150px;
     }50%{
         bottom: 150px;

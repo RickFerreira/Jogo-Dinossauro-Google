@@ -10,6 +10,7 @@ const pulo = () => { //criando a classe para executar a função depois de clica
     }, 500);
 }
 
+
 const loop = setInterval(() => {
 
     const vacaPosicao = vaca.offsetLeft;//pegar a proprierade left do css
