@@ -40,6 +40,8 @@ const loop = setInterval(() => {
 
         nuvem.style.animation = 'none' ;//para a animação do nuvem
         nuvem.style.right = `${nuvemPosicao}px`;//parar na posição que tá
+
+        clearInterval(loop);
     }
 
 }, 10);
